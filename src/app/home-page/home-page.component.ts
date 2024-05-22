@@ -2,20 +2,15 @@ import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'home-page',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  templateUrl: './home-page.component.html',
+  styleUrl: './home-page.component.scss',
 })
-export class AppComponent {
-  title = 'base-app-angular';
+export class HomePageComponent {
 
-  /**
-   *
-   */
-  constructor(private router : Router) {
-    
+  constructor(private router : Router) {    
   }
 
   goToNewPage = () => {
